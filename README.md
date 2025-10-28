@@ -1,16 +1,18 @@
-# React + Vite
+🌟 Tech Stack Focus: State Management (Context API)
+Humne iss project mein state management ke liye React Context API ka use kiya hai. Yeh ek powerful tool hai jo bade applications mein data sharing ko bahut easy bana deta hai.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Why Context API? (Kyun Context API?)
+Prop Drilling Se Chhutkara: Normally, agar data ko ek parent se bohot saare nested children tak bhejna ho, toh hum props ko har component se manually pass karte hain (jise Prop Drilling kehte hain). Context API is problem ko solve karta hai.
 
-Currently, two official plugins are available:
+Global Access: Context humein ek aisa "global data store" create karne deta hai jise component tree mein koi bhi component directly access kar sakta hai, bina beech ke components ko disturb kiye.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Lightweight: Redux jaise libraries ke comparison mein, Context API ek lightweight aur in-built solution hai jo medium to large-sized applications ke global state ko efficiently handle karta hai.
 
-## React Compiler
+Implementation Details (Kaise Use Kiya?)
+Humne Context ko useContext hook ke saath use kiya hai:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Context.Provider: Yeh component top-level par wrap kiya gaya hai (usually index.js mein) jisse yeh ensure ho ki global state poore application mein available ho.
 
-## Expanding the ESLint configuration
+useContext Hook: Components mein state ko read aur consume karne ke liye, hum useContext(MyContext) hook ka use karte hain.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Contexts Created: Iss project mein, humne mainly Authentication Status (login/logout) aur Application Theme (Dark/Light mode) ko Context ke through manage kiya hai.
