@@ -1,4 +1,4 @@
-**🌟 Tech Stack Focus: State Management (Context API)**
+**🌟 Tech Stack Focus: State Management (Context API)**//
 Humne iss project mein state management ke liye React Context API ka use kiya hai. Yeh ek powerful tool hai jo bade applications mein data sharing ko bahut easy bana deta hai.
 
 #Why Context API? (Kyun Context API?)
