@@ -1,7 +1,7 @@
-🌟 Tech Stack Focus: State Management (Context API)
+#🌟 Tech Stack Focus: State Management (Context API)
 Humne iss project mein state management ke liye React Context API ka use kiya hai. Yeh ek powerful tool hai jo bade applications mein data sharing ko bahut easy bana deta hai.
 
-Why Context API? (Kyun Context API?)
+#Why Context API? (Kyun Context API?)
 Prop Drilling Se Chhutkara: Normally, agar data ko ek parent se bohot saare nested children tak bhejna ho, toh hum props ko har component se manually pass karte hain (jise Prop Drilling kehte hain). Context API is problem ko solve karta hai.
 
 Global Access: Context humein ek aisa "global data store" create karne deta hai jise component tree mein koi bhi component directly access kar sakta hai, bina beech ke components ko disturb kiye.
